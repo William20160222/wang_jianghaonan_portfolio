@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "_vars";
+@import 'modules/_header';
+@import 'modules/_about';
+@import 'modules/_portfolio';
+@import 'modules/_contact';
+@import 'modules/_footer';
+
+iv,
+p,
+body,
+header,
+footer,
+section,
+article,
+nav,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background-image: url('../images/dark.png');
+}
+@media screen  and (min-width: 1200px){
+  #mainContainer {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,111 @@
+#about {
+    background-image: url("../images/phone_about_bckgrd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: $about-conatct-color;
+    font-weight: $text-weight;
+    .title {
+        font-family: $title-font;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+        display: block;
+    }
+    .des {
+      width: 90%;
+      margin: 30px auto;
+        p{
+            font-size: $phone-font-size;
+            font-family: $text-font;
+            text-align: center;
+        }
+    }
+    .info{
+        width: 95%;
+        margin: 30px auto;
+        .myinfo{
+            background-image: url("../images/phone_about_infobox1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            h3{
+                text-align: center;
+                padding-top: 10px;
+            }
+            p{
+                font-size: $phone-font-size;
+                text-align: center;
+            }
+        }
+    }
+  }
+@media screen  and (min-width: 768px){
+    #about {
+        background-image: url("../images/pad_about_bckgrd.png");
+        
+        .des {
+          width: 90%;
+          margin: 50px auto;
+            p{
+                font-size: $tablet-font-size;
+                font-family: $text-font;
+                text-align: center;
+            }
+        }
+        .info{
+            width: 100%;
+            margin: 60px auto;
+            .myinfo{
+                h3{
+                    padding-top: 20px;
+                }
+                p{
+                    font-size: $tablet-font-size;
+                }
+            }
+            .myportrait {
+                    img{
+                        transform: rotate(0deg);
+                        transition: width 2s,height 2s,transform 2s;
+                    }
+                    img:hover{
+                        transition: width 2s ,height 2s, transform 2s;
+                        transition-timing-function: ease;
+                        transform: rotateY(360deg);
+                    }
+            }
+        }
+      }
+}
+
+@media screen  and (min-width: 1200px){
+    #about {
+        background-image: url("../images/pc_about_bckgrd.png");
+        height: 720px;
+        .title{
+            font-size: $desktop-title-font-size;
+        }
+        .des {
+          width: 100%;
+          margin: 50px auto;
+            p{
+                font-size: $desktop-font-size;
+                font-family: $text-font;
+                text-align: center;
+            }
+        }
+        .info{
+            width: 100%;
+            margin: 60px auto;
+            .myinfo{
+                h3{
+                    padding-top: 20px;
+                }
+                p{
+                    font-size: $desktop-font-size;
+                }
+            }
+        }
+      }
+}

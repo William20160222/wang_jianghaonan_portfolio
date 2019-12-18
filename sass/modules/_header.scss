@@ -1,0 +1,105 @@
+
+#mainNav{
+    nav{
+        button{
+            i{
+                color: white;
+                font-size: 24px;
+            }
+        }
+        .navBar{
+            ul{
+                li{
+                    a{
+                        color: white;
+                    }
+                    a:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+#home {
+    background-image: url("../images/home_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: $home-portfolio-color;
+    font-weight: $text-weight;
+    .title {
+        font-family: $title-font;
+        font-size: $phone-title-font-size;
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .des {
+      width: 80%;
+      background-color: #484846;
+      margin-top: 100px;
+      padding: 50px 0;
+        p{
+            width: 85%;
+            text-align: right;
+            padding-right: 10px;
+            margin-left: 15%;
+            font-size: $phone-font-size;
+            font-family: $text-font;
+        }
+    }
+  }
+@media screen  and (min-width: 768px){
+    #mainNav {
+        #logo{
+            margin-left: 20px;
+        }
+        .navBar{
+            ul{
+                li{
+                    margin-left: 30px;
+                    a{
+                        color: white;
+                        font-size: 24px;
+                    }
+                    a:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    
+    }
+    #home{
+        background-image: url("../images/pc_home_bckgrd.png");
+        height: 600px;
+        .title{
+            font-size: $tablet-title-font-size;
+        }
+        .des{
+            background-color:  hsla(60, 1.4%, 27.8%, 0.8);
+            p{
+                font-size: $tablet-font-size;
+            }
+        }
+    }
+}
+
+@media screen  and (min-width: 1200px){
+    #home{
+        height: 840px;
+        .title{
+            padding-top: 250px;
+            font-size: $desktop-title-font-size;
+        }
+        .des{
+            width: 70%;
+            p{
+                width: 50%;
+                margin-left: 50%;
+                font-size: $desktop-font-size;
+            }
+        }
+    }
+}

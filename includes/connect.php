@@ -1,8 +1,9 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pw = "root";
-$db = "db_portfolio";
+$host = "server237.web-hosting.com";
+$user = "nanpwwsn_william0222";
+$pw = "490320gdS@";
+$db = "nanpwwsn_portfolio";
+
 
 $conn = mysqli_connect($host, $user, $pw, $db);
 

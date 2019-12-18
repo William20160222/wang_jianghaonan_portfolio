@@ -1,0 +1,141 @@
+#contact{
+    background-image: url("../images/phone_contact_bckgrd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $about-conatct-color;
+    font-weight: $text-weight;
+    height: 500px;
+    .touch{
+        h2{
+            padding-top: 20px;
+            text-align: center;
+        }
+        p{
+            width: 90%;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            font-size: $phone-font-size;
+        }
+    }
+    form{
+        width: 80%;
+        margin: 20px auto;
+        div{
+            input{
+                width: 100%;
+                margin: 10px 0;
+            }
+            textarea{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        button{
+            margin: 10px auto;
+            padding: 0 30px;
+            
+        }
+    }
+    .social{
+        float: left;
+        width: 50%;
+        padding-top: 10px;
+        ul{
+            list-style: none;
+            li{
+                display: inline;
+                margin-left: 10%;
+                img{
+                    width: 10%;
+                }
+            }
+        }
+    }
+    .copyright{
+        float: right;
+        width: 50%;
+        padding-top: 10px;
+        p{
+            font-size: $phone-font-size;
+        }
+    }
+}
+@media screen  and (min-width: 768px){
+    #contact{
+        height: 600px;
+        background-image: url("../images/pad_contact_bckgrd.png");
+        .touch{
+            p{
+                font-size: $tablet-font-size;
+            }
+        }
+        form{
+            width: 80%;
+            margin: 50px auto;
+            div{
+                input{
+                    width: 100%;
+                    margin: 10px 0;
+                }
+                textarea{
+                    width: 100%;
+                    margin: 10px 0;
+                    height: 100px;
+                }
+            }
+        }
+        .social{
+            width: 50%;
+            ul{
+                li{
+                    img{
+                        width: 8%;
+                    }
+                }
+            }
+        }
+        .copyright{
+            width: 35%;
+            p{
+                font-size: $tablet-font-size;
+            }
+        }
+    }
+}
+
+@media screen  and (min-width: 1200px){
+    #contact{
+        height: 720px;
+        background-image: url("../images/pc_contact_bckgrd.png");
+        .touch{
+            p{
+                font-size: $desktop-font-size;
+            }
+        }
+        form{
+            div{
+                input{
+                    margin: 20px 0;
+                    height: 40px;
+                }
+                textarea{
+                    margin: 20px 0;
+                }
+            }
+            button{
+                margin: 10px auto;
+                padding: 5px 50px;
+            }
+        }
+        .social{
+            width: 50%;
+        }
+        .copyright{
+            width: 30%;
+            p{
+                font-size: $desktop-font-size;
+            }
+        }
+    }
+}
